@@ -70,6 +70,13 @@ build CMakeFiles/ResourceMonitor.dir/src/process.c.o: C_COMPILER__ResourceMonito
   OBJECT_DIR = CMakeFiles/ResourceMonitor.dir
   OBJECT_FILE_DIR = CMakeFiles/ResourceMonitor.dir/src
 
+build CMakeFiles/ResourceMonitor.dir/src/logger.c.o: C_COMPILER__ResourceMonitor_unscanned_Debug /home/pink/CLionProjects/ResourceMonitor/src/logger.c || cmake_object_order_depends_target_ResourceMonitor
+  DEP_FILE = CMakeFiles/ResourceMonitor.dir/src/logger.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/pink/CLionProjects/ResourceMonitor/src
+  OBJECT_DIR = CMakeFiles/ResourceMonitor.dir
+  OBJECT_FILE_DIR = CMakeFiles/ResourceMonitor.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ResourceMonitor
@@ -78,7 +85,7 @@ build CMakeFiles/ResourceMonitor.dir/src/process.c.o: C_COMPILER__ResourceMonito
 #############################################
 # Link the executable ResourceMonitor
 
-build ResourceMonitor: C_EXECUTABLE_LINKER__ResourceMonitor_Debug CMakeFiles/ResourceMonitor.dir/src/main.c.o CMakeFiles/ResourceMonitor.dir/src/monitor.c.o CMakeFiles/ResourceMonitor.dir/src/process.c.o | /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
+build ResourceMonitor: C_EXECUTABLE_LINKER__ResourceMonitor_Debug CMakeFiles/ResourceMonitor.dir/src/main.c.o CMakeFiles/ResourceMonitor.dir/src/monitor.c.o CMakeFiles/ResourceMonitor.dir/src/process.c.o CMakeFiles/ResourceMonitor.dir/src/logger.c.o | /usr/lib/x86_64-linux-gnu/libcurses.so /usr/lib/x86_64-linux-gnu/libform.so
   FLAGS = -g
   LINK_LIBRARIES = -lcurses  /usr/lib/x86_64-linux-gnu/libform.so
   OBJECT_DIR = CMakeFiles/ResourceMonitor.dir

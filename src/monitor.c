@@ -64,13 +64,13 @@ void get_system_info() {
 }
 
 
-void get_cpu_usage() {
+double get_cpu_usage() {
 
         FILE *statfile = fopen("/proc/stat", "r");
 
         if (statfile == NULL) {
             perror("Error opening /proc/stat");
-            return;
+            return -1;
         }
 
         unsigned long long totalUser, totalNice, totalSystem, totalIdle;
@@ -79,7 +79,7 @@ void get_cpu_usage() {
         if (fscanf(statfile, "cpu %llu %llu %llu %llu", &totalUser, &totalNice, &totalSystem, &totalIdle) != 4) {
             fclose(statfile);
             perror("Error reading /proc/stat");
-            return;
+            return -1;
         }
 
         fclose(statfile);
@@ -92,14 +92,14 @@ void get_cpu_usage() {
 
         if (statfile == NULL) {
             perror("Error opening /proc/stat");
-            return;
+            return -1;
         }
 
 
         if (fscanf(statfile, "cpu %llu %llu %llu %llu", &newUser, &newNice, &newSystem, &newIdle) != 4) {
             fclose(statfile);
             perror("Error reading /proc/stat");
-            return;
+            return -1;
         }
 
         fclose(statfile);
@@ -125,16 +125,17 @@ void get_cpu_usage() {
         }
     }
     printf("]\n");
+    return cpuUsage;
     }
 
 
-    void get_memory_usage() {
+    long get_memory_usage() {
 
         FILE *meminfo = fopen("/proc/meminfo", "r");
 
         if (meminfo == NULL) {
             perror("Error opening /proc/meminfo");
-            return;
+            return -1;
         }
 
         unsigned long long totalMemory, freeMemory, usedMemory;
@@ -142,7 +143,7 @@ void get_cpu_usage() {
         if (fscanf(meminfo, "MemTotal: %llu kB\nMemFree: %llu kB", &totalMemory, &freeMemory) != 2) {
             fclose(meminfo);
             perror("Error reading /proc/meminfo");
-            return;
+            return -1;
         }
 
         fclose(meminfo);
@@ -167,5 +168,6 @@ void get_cpu_usage() {
             }
         }
         printf("]\n");
+        return (double)usedMemory / totalMemory * 100.0;
     }
 

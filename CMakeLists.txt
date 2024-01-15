@@ -11,6 +11,7 @@ add_executable(ResourceMonitor
         src/monitor.c
         src/monitor.h
         src/process.c
-        src/process.h)
+        src/process.h
+        src/logger.c)
 
 target_link_libraries(ResourceMonitor ${CURSES_LIBRARIES})

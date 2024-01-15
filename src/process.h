@@ -6,7 +6,7 @@
 #define RESOURCEMONITOR_PROCESS_H
 
 
-void get_process_info();
+int get_process_info();
 char get_process_status(const char *process_path);
 
 void get_top_processes_by_cpu();
