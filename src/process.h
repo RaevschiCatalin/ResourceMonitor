@@ -7,8 +7,9 @@
 
 
 void get_process_info();
+char get_process_status(const char *process_path);
+
 void get_top_processes_by_cpu();
 void get_top_processes_by_memory();
-void get_process_status(char *process_path);
 
 #endif //RESOURCEMONITOR_PROCESS_H

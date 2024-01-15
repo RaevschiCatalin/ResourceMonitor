@@ -4,10 +4,14 @@
 
 #include <stdlib.h>
 #include <unistd.h>
+#include <ncurses.h>
+
+
 #include "monitor.h"
 #include "process.h"
 
 int main() {
+
     while(1){
         system("clear");
         get_system_info();
@@ -18,5 +22,6 @@ int main() {
         get_top_processes_by_memory();
         sleep(3);
     }
+
     return 0;
 }

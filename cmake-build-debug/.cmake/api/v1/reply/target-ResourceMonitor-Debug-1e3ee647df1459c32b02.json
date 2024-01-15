@@ -11,6 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -25,11 +26,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
 				"file" : 0,
 				"line" : 6,
 				"parent" : 0
@@ -48,7 +55,7 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "/home/pink/CLionProjects/ResourceMonitor/src"
 				}
 			],
@@ -81,6 +88,15 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lcurses",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libform.so",
+				"role" : "libraries"
 			}
 		],
 		"language" : "C"

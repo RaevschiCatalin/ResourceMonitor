@@ -86,6 +86,41 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindCurses.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/261/bin/cmake/linux/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
