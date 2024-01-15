@@ -116,7 +116,7 @@ void get_cpu_usage() {
         printf("CPU Usage: %.2f%%\n", cpuUsage);
     printf("CPU Usage: [");
     int barLength = 50;
-    int numBars = (int)(cpuUsage / 2.0); // Dividing by 5 to fit into 20 bars
+    int numBars = (int)(cpuUsage / 2.0);
     for (int i = 0; i < barLength; ++i) {
         if (i < numBars) {
             printf("|");

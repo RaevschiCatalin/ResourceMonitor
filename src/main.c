@@ -13,7 +13,6 @@ int main() {
         get_system_info();
         get_cpu_usage();
         get_memory_usage();
-
         get_process_info();
         get_top_processes_by_cpu();
         get_top_processes_by_memory();
